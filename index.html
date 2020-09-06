@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Architecture Calculator</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="main.js"></script>
+</head>
+<body>
+    <div id="container">
+        <div id="tabs">
+            <button class="tablinks" onclick="tabs(event, 'inch')">Inch to Feet and Inch</button>
+            <button class="tablinks" onclick="tabs(event, 'feet')">Feet and Inch to Inch</button>
+            <button class="tablinks" onclick="tabs(event, 'angle')">Angle Calculator</button>
+        </div>
+
+        <div id="tab-contents">
+            <div id="inch" class="tab-content">
+                <label for="" class="labels">How Many Inches?</label>
+                <input type="text" placeholder="Inch" id="input-inch" class="inputs">
+                <button id="submit-inch" onclick="inch()" class="buttons">Convert</button>
+                <h1 class="results" id="result-inch"></h1>
+            </div>
+            <div id="feet" class="tab-content">
+                <label for="" class="labels">How Many Feet?</label>
+                <input type="text" placeholder="Feet" id="input-feet" class="inputs">
+                <label for="" class="labels">Inches:</label>
+                <input type="text" placeholder="Inch" id="input-feet-inch" class="inputs">
+                <button id="submit-inch" onclick="feet()" class="buttons">Convert</button>
+                <h1 class="results" id="result-feet"></h1>
+            </div>
+            <div id="angle" class="tab-content">
+                <label for="" class="labels">Adjacent Side:</label>
+                <input type="text" placeholder="Adjacent Side" id="side-adj" class="inputs">
+                <label for="" class="labels">Opposite Side:</label>
+                <input type="text" placeholder="Opposite Side" id="side-opp" class="inputs">
+                <button onclick="angle()" class="buttons">Calculate</button>
+                <h1 class="results" id="result-angle"></h1>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
